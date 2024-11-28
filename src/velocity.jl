@@ -1,0 +1,1 @@
+struct Velocity <: AbstractObservable end
