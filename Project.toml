@@ -18,21 +18,30 @@ WannierIO = "cb1bc77f-5443-4951-af9f-05b616a3e422"
 WannierInterpolationWannierIOExt = "WannierIO"
 
 [compat]
-Aqua = "0.8"
+Aqua = "0.8.9"
 CommonSolve = "0.2.4"
 FastLapackInterface = "2.0.4"
 FourierSeriesEvaluators = "1.1.2"
-LinearAlgebra = "1.11.0"
+LazyArtifacts = "1.10"
+LinearAlgebra = "1.10"
 OffsetArrays = "1.14.1"
+PyCall = "1"
 StaticArrays = "1.9.8"
+Test = "1.10"
+Wannier = "0.4"
+WannierIO = "0.2"
 julia = "1.10"
 
 [extras]
 Aqua = "4c88cf16-eb10-579e-8560-4a9242c79595"
+LazyArtifacts = "4af54fe1-eca0-43a8-85a7-787d91b784e3"
 LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
 OffsetArrays = "6fe1bfb0-de20-5000-8ca7-80f57d26f881"
+PyCall = "438e738f-606a-5dbb-bf0a-cddfbfd45ab0"
 StaticArrays = "90137ffa-7385-5640-81b9-e52037218182"
 Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+Wannier = "2b19380a-1f7e-4d7d-b1b8-8aa60b3321c9"
+WannierIO = "cb1bc77f-5443-4951-af9f-05b616a3e422"
 
 [targets]
-test = ["Aqua", "LinearAlgebra", "OffsetArrays", "StaticArrays", "Test"]
+test = ["Aqua", "LazyArtifacts", "LinearAlgebra", "PyCall", "Test", "Wannier", "WannierIO"]
