@@ -1,6 +1,6 @@
 using Test
 using PyCall
-wb = pyimport_conda("wannierberri", "conda-forge")
+wb = pyimport_conda("wannierberri", "wannierberri", "conda-forge")
 using WannierIO, WannierInterpolation
 using FourierSeriesEvaluators
 using LinearAlgebra
