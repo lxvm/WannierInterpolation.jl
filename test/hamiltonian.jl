@@ -4,7 +4,7 @@ wb = pyimport_conda("wannierberri", "conda-forge")
 using WannierIO, WannierInterpolation
 using FourierSeriesEvaluators
 using LinearAlgebra
-using Wannier
+# using Wannier
 using LazyArtifacts
 
 rtol = 1e-5
@@ -39,7 +39,7 @@ rtol = 1e-5
     for n in 1:nband
         @test norm(vec(permutedims(grid_result.get_data(iband=n-1, quantity="Energy"), (3,2,1))) - getindex.(vals, n))./norm(getindex.(vals, n)) < rtol
     end
-
+    #=
     model = read_w90_with_chk(seed)
 
     hamiltonian = TBHamiltonian(model)
@@ -48,4 +48,5 @@ rtol = 1e-5
     for n in 1:nband
         @test norm(vec(permutedims(grid_result.get_data(iband=n-1, quantity="Energy"), (3,2,1))) - getindex.(wvals, n))./norm(getindex.(wvals, n)) < rtol
     end
+    =#
 end

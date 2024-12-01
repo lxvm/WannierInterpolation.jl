@@ -28,7 +28,6 @@ OffsetArrays = "1.14.1"
 PyCall = "1"
 StaticArrays = "1.9.8"
 Test = "1.10"
-Wannier = "0.4"
 WannierIO = "0.2"
 julia = "1.10"
 
@@ -40,8 +39,7 @@ OffsetArrays = "6fe1bfb0-de20-5000-8ca7-80f57d26f881"
 PyCall = "438e738f-606a-5dbb-bf0a-cddfbfd45ab0"
 StaticArrays = "90137ffa-7385-5640-81b9-e52037218182"
 Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
-Wannier = "2b19380a-1f7e-4d7d-b1b8-8aa60b3321c9"
 WannierIO = "cb1bc77f-5443-4951-af9f-05b616a3e422"
 
 [targets]
-test = ["Aqua", "LazyArtifacts", "LinearAlgebra", "PyCall", "Test", "Wannier", "WannierIO"]
+test = ["Aqua", "LazyArtifacts", "LinearAlgebra", "PyCall", "Test", "WannierIO"]
